@@ -2,6 +2,7 @@
 A tampermonkey script which launches a specific Roblox game session from the URL
 
 Allowing you to do something like this: 
-<video width="320" height="240" controls>
-  <source src="https://github.com/mawesome4ever/Dependancies/blob/master/JoinInstanceShow.mp4" type="video/mp4">
-</video>
+
+
+https://user-images.githubusercontent.com/26739505/119146856-e84b9a80-b9ff-11eb-86b0-17cb81a07942.mp4
+
