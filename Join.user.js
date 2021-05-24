@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name         Instance Join
 // @namespace    name?
-// @version      0.1
+// @version      0.2
+// @updateURL    https://github.com/mawesome4ever/GameLauncherTamperMonkey/raw/master/Join.user.js
 // @description  Join game with id
 // @author       mawesome4ever (addictedroblox1414)
 // @match        http*://*.roblox.com/games/*
@@ -21,10 +22,10 @@ function GetURLParameter(sParam){
 function main(){
     var PlaceID = location.href.match(/\/(\d+)\//g);
     PlaceID = String(PlaceID).match(/\d+/g);
-    var gameid = GetURLParameter("gameid");
-    console.log("gameid: "+gameid+" placeid: "+PlaceID);
-    if (PlaceID && gameid){
-        Roblox.GameLauncher.joinGameInstance(parseInt(PlaceID,10), gameid);
+    let gameid = GetURLParameter("gameid");
+    console.log(" placeid: "+PlaceID+" gameid: "+gameid);
+    if (gameid && PlaceID){
+        Roblox.GameLauncher.joinGameInstance(Number(PlaceID), String(gameid));
     }
 }
 document.body.onload = main();
