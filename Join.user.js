@@ -25,7 +25,7 @@ function main(){
     let gameid = GetURLParameter("gameid");
     console.log(" placeid: "+PlaceID+" gameid: "+gameid);
     if (gameid && PlaceID){
-        Roblox.GameLauncher.joinGameInstance(Number(PlaceID), String(gameid));
+        Roblox.GameLauncher.joinGameInstance(parseInt(PlaceID,10), String(gameid));
     }
 }
 document.body.onload = main();
