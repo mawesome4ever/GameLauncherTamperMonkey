@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instance Join
 // @namespace    name?
-// @version      0.2
+// @version      0.3
 // @updateURL    https://github.com/mawesome4ever/GameLauncherTamperMonkey/raw/master/Join.user.js
 // @description  Join game with id
 // @author       mawesome4ever (addictedroblox1414)
